@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Armas | Galeria</title>
+	<style>
+		.fonte {
+			font-family: 'Raleway', sans-serif;
+			font-size: 20px;
+		}
+
+		body {
+			margin: 0;
+			background-color: #1e1e1f;
+		}
+
+		img {
+			opacity: 0.2;
+		}
+
+		img:hover {
+			opacity: 1;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #333;
+			overflow: hidden;
+			border: 2px solid #ed145b;
+		}
+
+		li a,
+		.dropbtn {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #111;
+		}
+
+		li {
+			float: left;
+		}
+
+		.dropdown {
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #f1f1f1;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		}
+
+		.responsive {
+			padding: 0 6px;
+			width: 24.99999%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 65px;
+		}
+
+		.gallery {
+			border: 3px solid #ccc;
+			width: 320px;
+			height: 700px;
+		}
+
+		.gallery:hover {
+			border: 2px solid #777;
+		}
+
+		.gallery img {
+			width: 100%;
+			height: auto;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.desc {
+			padding: 20px;
+			text-align: justify;
+			font-size: 20px;
+			color: white;
+			display: block;
+		}
+
+		h1 {
+			text-align: center;
+			color: white;
+			padding-top: 2%;
+		}
+
+		#footer {
+			
+			font-family: 'Acme', sans-serif;
+			font-size: 20px;
+			width: 100%;
+			height: 20px;
+			bottom: 0;
+			left: 0;
+			margin-top: 23%;
+			padding-top: 20px;
+			padding-bottom: 37px;
+			text-align: center;
+			background-color: #2e2e31;
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="fonte">
+
+		<ul>
+			<li class="dropdown">
+				<a href="index.html" class="dropbtn">Home</a>
+			</li>
+			<li class="dropdown">
+				<a href="arma_chinesa.html" class="dropbtn">Armas Chinesas</a>
+			</li>
+			<li class="dropdown">
+				<a href="armas_romanas.html" class="dropbtn">Armas Romanas</a>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Armas Japonesas</a>
+				<div class="dropdown-content">
+					<a href="chinesa_katana.html">Katana</a>
+					<a href="chinesa_shuriken.html">Shuriken</a>
+					<a href="chinesa_kama.html">Kama</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="galeria.html" class="dropbtn">Galeria</a>
+			</li>
+			<li class="dropdown">
+				<a href="formulario.html" class="dropbtn">Formulário</a>
+			</li>
+		</ul>
+
+		<h1>Galeria</h1>
+
+		<div class="container">
+			<div class="responsive">
+				<div class="gallery">
+					<a href="img/espada_jian2.jpg">
+						<img src="img/espada_jian2.jpg" alt="Espada">
+					</a>
+					<div class="desc">
+						A "jian" tem lâmina afiada em formato de diamante mais espessa no centro, afinando até os gumes
+						da espada.
+					</div>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a href="img/falcata_faca2.jpg">
+						<img src="img/falcata_faca2.jpg" alt="Falcata">
+					</a>
+					<div class="desc">
+						A falcata tem uma lâmina afiada que se curva para a frente em direção á ponta da própria arma.
+					</div>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a href="img/kama.jpg">
+						<img src="img/kama.jpg" alt="Kama">
+					</a>
+					<div class="desc">
+						Tipo de ferramenta tradicional de agricultura proveniente de Okinawa, no Japão.
+					</div>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a href="img/lanca_bastao2.jpg">
+						<img src="img/lanca_bastao2.jpg" alt="Katana">
+					</a>
+					<div class="desc">
+						Caracteriza-se por sua aparência distintiva: uma lâmina curva, delgada e de um único fio com uma
+						proteção circular ou quadrada (tsuba) e base longa para acomodar duas mãos.
+					</div>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a href="img/pugio_faca2.jpg">
+						<img src="img/pugio_faca2.jpg" alt="Lança">
+					</a>
+					<div class="desc">
+						A lâmina,geralmente de bronze ou ferro, teria cerca de 15 a 28 centímetros de comprimento e 5
+						centímetros de largura.
+					</div>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a href="img/katana2atualizada.jpg">
+						<img src="img/katana2atualizada.jpg" alt="Pugio">
+					</a>
+					<div class="desc">
+						Catana (katana (刀)) é uma tradicional espada japonesa (日本刀 nihontō) que foi usada pelos
+						samurais do Japão antigo e feudal. A,catana é caracterizado por sua aparência distintiva: uma
+						lâmina curva, de um único fio com um protetor circular ou esquadrado e um cabo longo para
+						acomodar
+						duas mãos.
+					</div>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a href="img/shuriken2.jpg">
+						<img src="img/shuriken2.jpg" alt="Shuiriken">
+					</a>
+					<div class="desc">
+						Shuriken, cujo significado literal é "espada escondida na mão", é imediatamente associada à arma
+						de uso exclusivo
+						dos ninjas.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<footer>
+			Armas™ - Copyright© Bruno Silva Souza, pertencente ao
+			curso de Desenvolvimentos de Sistemas (DS) da instituição Etec Irmã Agostina. Todos os direitos reservados
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

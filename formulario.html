@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Armas | Formulário</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		input[type=text],
+		select,
+		textarea {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #c0c3bd;
+			background-color: white;
+			border-radius: 4px;
+			resize: vertical;
+		}
+
+		input[type=text]:focus {
+			background-color: lightgreen;
+		}
+
+		label {
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+		}
+
+		input[type=submit] {
+			font-size: 1.3em;
+			/*Aumenta em % o tamanho da fonte*/
+			background-color: #ed145b;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+			padding: 12px 20px;
+		}
+
+		input[type=submit]:hover {
+			background-color: #ed145b;
+		}
+
+		.container {
+			border-radius: 5px;
+			background-color: #5c5d5b;
+			padding: 20px;
+		}
+
+		.col-25 {
+			float: left;
+			width: 25%;
+			margin-top: 6px;
+
+		}
+
+		.col-75 {
+			float: left;
+			width: 25%;
+			margin-top: 6px;
+			font-family: 'Raleway', sans-serif;
+		}
+
+		/*Limpa floats depois das colunas*/
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/*Layout responsivo - quando o navegador tem menos de 600 px de largura , faz com que as colunas fiquem uma sobre as outras ao inves de uma do lado da outra*/
+
+		@media screen and (max-width: 600px) {
+
+			.col-25,
+			.col-75,
+			input[type=submit] {
+				width: 100%;
+				margin-top: 0;
+			}
+		}
+
+		body {
+			margin: 0;
+			background-color: #1e1e1f;
+		}
+
+		.fonte {
+			font-family: 'Raleway', sans-serif;
+			color: white;
+			font-size: 20px;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #333;
+			overflow: hidden;
+			border: 2px solid #ed145b;
+		}
+
+		li a,
+		.dropbtn {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #111;
+		}
+
+		li {
+			float: left;
+		}
+
+		.dropdown {
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #f1f1f1;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.h2 {
+			padding-left: 15px;
+			padding-top: 40px;
+		}
+
+		footer {
+			font-family: 'Acme', sans-serif;
+			font-size: 20px;
+			width: 100%;
+			height: 20px;
+			bottom: 0;
+			left: 0;
+			margin-top: 23%;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			text-align: center;
+			background-color: #2e2e31;
+			color: white;
+			text-align: center;
+        }
+	</style>
+</head>
+
+<body>
+	<div class="fonte">
+		<ul>
+			<li class="dropdown">
+				<a href="index.html" class="dropbtn">Home</a>
+			</li>
+			<li class="dropdown">
+				<a href="arma_chinesa.html" class="dropbtn">Armas Chinesas</a>
+			</li>
+			<li class="dropdown">
+				<a href="armas_romanas.html" class="dropbtn">Armas Romanas</a>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Armas Japonesas</a>
+				<div class="dropdown-content">
+					<a href="chinesa_katana.html">Katana</a>
+					<a href="chinesa_shuriken.html">Shuriken</a>
+					<a href="chinesa_kama.html">Kama</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="galeria.html" class="dropbtn">Galeria</a>
+			</li>
+			<li class="dropdown">
+				<a href="formulario.html" class="dropbtn">Formulário</a>
+			</li>
+		</ul>
+		<nav class="h2">
+			<h2>Formulário</h2>
+		</nav>
+		<div class="container">
+			<form action="obrigado.html" method="GET">
+				<div class="row">
+					<div class="col-25"><label for="pnome">Nome</label></div>
+					<div class="col-75">
+						<input type="text" name="firstname" id="pnome" placeholder="Nome..." required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25"><label for="snome">Sobrenome</label></div>
+					<div class="col-75">
+						<input type="text" name="lastname" id="snome" placeholder="Sobrenome..." required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25"><label for="estado">Estado</label></div>
+					<div class="col-75">
+						<select>
+							<option value="sl">Selecione</option>
+							<option value="gm">Gostei muito</option>
+							<option value="g">Gostei</option>
+							<option value="am">Achei normal</option>
+							<option value="fr">Ficou ruim</option>
+							<option value="mafm">Minha avó faria melhor</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25"><label for="coment">Nos ajude deixando sua opinião.</label></div>
+					<div class="col-75">
+						<textarea id="coment" name="coment" placeholder="Deixe seu comentário aqui ;-)"
+							style="height: 200px;"></textarea>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<input type="submit" name="Enviar">
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+        Armas™ - Copyright© Bruno Silva Souza, pertencente ao 
+        curso de Desenvolvimentos de Sistemas (DS) da instituição Etec Irmã Agostina. Todos os direitos reservados
+    </footer>
+</body>
+
+</html>
